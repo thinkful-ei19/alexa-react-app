@@ -1,12 +1,23 @@
 import React from 'react';
 
-export default function List() {
+export default function List(props) {
+    console.log(props)
+    const names = props.users.map((name, index) => (
+        <li key={index}>
+           {name} 
+        </li>
+    ))
+
+    const addresses = props.items.map((address, index) => (
+        <li key={index}>
+            {address}
+        </li>
+    ))
+
     return (
-        <div>
             <ul>
-                <li>Test 1</li>
-                <li>Test 2</li>
+                {names}
+                {addresses}
             </ul>
-        </div>
     );
 }
