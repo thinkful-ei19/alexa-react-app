@@ -34,8 +34,6 @@ export default class App extends React.Component {
         <List 
           users={this.state.names}
           items={this.state.addresses}
-
-        
         />
       </div>
     );

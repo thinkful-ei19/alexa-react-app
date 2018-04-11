@@ -10,6 +10,7 @@ export default function Form(props) {
                 let addressInputValue = event.target.addressInput.value
                 props.add(nameInputValue)
                 props.addAddress(addressInputValue)
+                
                 event.target.nameInput.value = ''
                 event.target.addressInput.value = ''
 
